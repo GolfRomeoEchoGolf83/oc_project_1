@@ -1,0 +1,153 @@
+/*
+ Theme Name:   full-frame-child
+ Theme URI:    
+ Description:  Full Frame Child Theme
+ Author:       Greg Decroix
+ Author URI:   
+ Template:     full-frame
+ Version:      1.0.0
+ License:      
+ License URI:  
+ Tags:         
+ Text Domain:  full-frame-child
+*/
+
+
+/* 
+import feuille de style 
+*/
+
+@import url("../full-frame/style.css");
+
+/* 
+police 
+*/
+
+html {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.8em;
+}
+
+#featured-content .entry-title {
+    color: #ffffff;
+}
+
+
+/* 
+ACCUEIL 
+HEADER  
+Suppression du titre 
+*/
+
+.page-id-22 .entry-title {
+    display: none;
+}
+
+.page-id-22 #post-22 {
+    padding-top: 0;
+}
+
+.page-id-22 .wrapper {
+    padding-top: inherit;
+}
+
+
+/* 
+RESPONSIVE 
+*/
+
+
+/*
+@media screen and (max-width: 990px) {
+    #content .wrapper {
+        padding: 10px;
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 319px) {
+    #content .wrapper,
+    .hentry,
+    .no-results,
+    .not-found,
+    .sidebar,
+    #comments,
+    #nav-below,
+    #infinite-handle,
+    #supplementary .widget {
+        padding: 15px;
+        padding-top: 0;
+    }
+}
+*/
+
+#content .wrapper {
+    padding-top: 0px !important;
+}
+
+
+/* 
+DERNIERE ACTUALITE 
+retrait du point de liste 
+*/
+
+.entry-content ul > li {
+    list-style-type: none;
+}
+
+
+/* 
+centrer le thumbnail 
+*/
+
+.rpwe-block {
+    align-content: center;
+}
+
+
+/*
+PLUS D'INFOS
+Mise en page 
+image 
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* 
+surbrillance des lignes du tableau au passage de la souris 
+*/
+
+tr:hover {
+    background-color: aquamarine;
+}
+
+
+/*
+CONTACT
+Bouton envoyer
+*/
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background-color: rgb(33, 117, 155);
+    color: white;
+    border: 1px solid;
+    cursor: pointer;
+    font-family: 'Dosis';
+    font-size: 0.8rem;
+    padding: .6em 1em .4em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    border-color: none;
+}
